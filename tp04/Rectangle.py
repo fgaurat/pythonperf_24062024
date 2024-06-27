@@ -5,6 +5,9 @@ class Rectangle:
     def __init__(self,longueur=0,largeur=0) -> None:
         self.__longueur=longueur
         self.__largeur=largeur
+        
+        assert self.__longueur != 1
+        
         Rectangle.__cpt+=1
 
     @classmethod
